@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@font-face {
+  font-family: "wonderland";
+  src: url("../fonts/wonderland.otf") format("opentype");
+}
+.main {
+  background: #0a0a16;
+  width: 500px;
+  height: 100%;
+}
+.v-navigation-drawer .v-list {
+  padding: 0 !important;
+}
+.v-app-bar {
+  border-bottom: 1px solid #2b2f38 !important;
+}
+.wonder-font {
+  font-family: "wonderland";
+}
