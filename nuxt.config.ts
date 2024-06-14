@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const apiUrl: { [key: number]: string; } = {
+  0: "https://app-shop-vujdw.ondigitalocean.app"
+};
+
 export default defineNuxtConfig({
+  
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },
@@ -15,6 +20,7 @@ export default defineNuxtConfig({
   vite: {
     define: {
       "process.env.DEBUG": false,
+      "process.env.API": apiUrl,
     },
   },
 });

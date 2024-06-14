@@ -1,10 +1,5 @@
 <script lang="ts" setup>
 import { CARDS_DATA } from "~/data/cards.data";
-// import { account, ID } from "~/data/utils/appwrite";
-// const { data, pending, error, refresh } = await useAsyncData(
-//   'mountains',
-//   () => $fetch('https://api.nuxtjs.dev/mountains')
-// )
 const loading = ref<boolean>(true);
 
 const updateLoading = () => {
@@ -56,9 +51,6 @@ const truncate = (str: string, num: number) => {
           <NuxtLink :to="`cards/${item.id}`">
             <v-img :src="item.img" cover>
               <v-toolbar color="rgba(0, 0, 0, 0)" theme="dark">
-                <v-toolbar-title class="text-h6">
-                  {{ item.title }}
-                </v-toolbar-title>
                 <v-spacer />
                 <v-toolbar-title class="text-category">
                   {{ item.title }}
@@ -67,7 +59,6 @@ const truncate = (str: string, num: number) => {
             </v-img>
             <v-card-actions
               class="full-height d-flex flex-column align-center justify-center pt-0"
-              style="margin-top: -15px"
             >
               <span class="text-description">{{
                 truncate(item.text, 15)
@@ -85,5 +76,6 @@ const truncate = (str: string, num: number) => {
 * {
   /* font-family: "fairy"; */
   font-weight: bold;
+  text-decoration: none;
 }
 </style>

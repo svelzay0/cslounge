@@ -20,4 +20,9 @@ export const MENU_DATA: IMenuItem[] = [
     url: "/cards",
     icon: "mdi-cards",
   },
+  {
+    title: "Boxes",
+    url: "/boxes",
+    icon: "mdi-cards",
+  },
 ]

@@ -22,7 +22,10 @@ const icons = reactive(["mdi-facebook", "mdi-twitter", "mdi-instagram"]);
 </template>
 
 <style scoped>
+.footer {
+  background: none;
+}
 .footer-class {
-  background: rgb(17, 22, 35);
+  background: rgba(14, 18, 29, 0.8);
 }
 </style>

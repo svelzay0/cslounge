@@ -48,12 +48,13 @@ import { MENU_DATA } from "~/data/menu.data";
 <template>
   <LayoutHeaderMenu @rail="rail = !rail" />
 
+  <!-- location="right" -->
   <v-navigation-drawer
     v-model="drawer"
     :rail="rail"
     permanent
     app
-    color="#0E121D"
+    color="rgb(14, 18, 29, 0.8)"
     @click="rail = false"
   >
     <v-list>
@@ -92,7 +93,7 @@ import { MENU_DATA } from "~/data/menu.data";
 
 <style scoped>
 * {
-  color: #576081 !important;
+  color: #9dabe0cf !important;
   text-decoration: none;
 }
 </style>
