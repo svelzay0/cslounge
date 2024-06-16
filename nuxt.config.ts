@@ -1,10 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+// import { tokenRefresh } from './utils/api';
 const apiUrl: { [key: number]: string; } = {
   0: "https://app-shop-vujdw.ondigitalocean.app"
 };
 
 export default defineNuxtConfig({
-  
+  runtimeConfig: {
+    public: {
+      apiUrl: process.env.API_BASE_URL,
+    },
+  },
   app: {
     pageTransition: { name: "page", mode: "out-in" },
   },

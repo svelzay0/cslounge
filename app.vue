@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { setupGlobalSettings } from "~/middleware/settings";
+setupGlobalSettings();
 </script>
 
 <template>

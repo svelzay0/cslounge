@@ -16,6 +16,7 @@ const asyncDataResponse = useAsyncData<{ data: any[] }>(async () => {
   );
   const data = await response.json();
   boxes.value = data.data;
+  console.log(boxes.value)
   isLoading.value = false;
   updateLoading();
   return { data };
